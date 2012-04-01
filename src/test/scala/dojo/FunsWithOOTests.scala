@@ -1,6 +1,8 @@
 package dojo
 
 import items.artifacts.Unicorn
+import items.fashion.Hat
+import items.house.Chair
 import items.{Purchasable, TimedItem, User}
 import org.scalatest.junit.JUnitRunner
 import org.junit.runner.RunWith
@@ -12,7 +14,7 @@ class FunsWithOOTests extends FunSuite with ShouldMatchers{
 
   // all items should have an id
   test("Unicorn should have id of 1"){
-    var id = new Unicorn().id
+    val id = new Unicorn().id
     id should equal (1)
   }
 
@@ -23,20 +25,21 @@ class FunsWithOOTests extends FunSuite with ShouldMatchers{
   // all fashion and house items should be able to be bought for cash deducted from user
 
   test("should buy hat and deduct 5 cash from user"){
-    assert(false)
-    //assertPurchasableItemCashDeduction(hat)
+    val hat: Hat = new Hat()
+    assertPurchasableItemCashDeduction(hat, 5)
   }
 
   test("should buy chair and deduct 3 cash from user"){
-    assert(false)
-    //assertPurchasableItemCashDeduction(chair)
+    val chair = new Chair()
+    assertPurchasableItemCashDeduction(chair, 3)
   }
 
-  def assertPurchasableItemCashDeduction(item:Purchasable){
+  def assertPurchasableItemCashDeduction(item:Purchasable, expectedDeduction:Int){
     val balance = 10
     val user = new User(balance)
     user.buy(item)
     // result needs to be asserted
+    user.cash should equal (balance - expectedDeduction)
   }
 
   // MachineGunUnicorn and JukeBox have special actions that are available a set time after creation
