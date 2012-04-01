@@ -12,7 +12,8 @@ class FunsWithOOTests extends FunSuite with ShouldMatchers{
 
   // all items should have an id
   test("Unicorn should have id of 1"){
-    assert(new Unicorn().id == 1)
+    var id = new Unicorn().id
+    id should equal (1)
   }
 
   test("anonymous items should have an id"){
