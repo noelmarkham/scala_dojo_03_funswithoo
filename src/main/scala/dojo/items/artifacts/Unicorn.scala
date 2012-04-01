@@ -1,5 +1,5 @@
 package dojo.items.artifacts
 
-class Unicorn extends ArtifactItem {
+class Unicorn extends ArtifactItem(1) {
 
 }

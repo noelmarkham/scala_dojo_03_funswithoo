@@ -2,6 +2,6 @@ package dojo.items.artifacts
 
 
 
-class MachineGunUnicorn extends ArtifactItem {
+class MachineGunUnicorn extends ArtifactItem(99) {
 
 }
