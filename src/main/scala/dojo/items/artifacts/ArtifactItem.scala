@@ -2,6 +2,6 @@ package dojo.items.artifacts
 
 import dojo.items.Item
 
-class ArtifactItem extends Item {
+abstract class ArtifactItem extends Item {
 
 }

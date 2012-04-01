@@ -1,5 +1,6 @@
 package dojo
 
+import items.artifacts.Unicorn
 import items.{Purchasable, TimedItem, User}
 import org.scalatest.junit.JUnitRunner
 import org.junit.runner.RunWith
@@ -11,7 +12,7 @@ class FunsWithOOTests extends FunSuite with ShouldMatchers{
 
   // all items should have an id
   test("Unicorn should have id of 1"){
-    assert(false)
+    assert(new Unicorn().id == 1)
   }
 
   test("anonymous items should have an id"){

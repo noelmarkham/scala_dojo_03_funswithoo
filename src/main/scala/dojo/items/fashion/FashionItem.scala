@@ -2,6 +2,6 @@ package dojo.items.fashion
 
 import dojo.items.Item
 
-class FashionItem extends Item {
+abstract class FashionItem extends Item {
 
 }
