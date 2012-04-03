@@ -1,5 +1,5 @@
 package dojo.items.house
 
-class Chair extends HouseItem(99) {
+class Chair(id:Int = -99) extends HouseItem(id) {
 
 }

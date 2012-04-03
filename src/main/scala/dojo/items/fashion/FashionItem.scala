@@ -1,7 +1,7 @@
 package dojo.items.fashion
 
-import dojo.items.Item
+import dojo.items.{Purchasable, Item}
 
-class FashionItem extends Item(99) {
+abstract class FashionItem(id:Int) extends Item(id) with Purchasable {
 
 }

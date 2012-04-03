@@ -1,6 +1,6 @@
 package dojo.items.fashion
 
 
-class Hat extends FashionItem {
+class Hat(id:Int = -99) extends FashionItem(id) {
 
 }

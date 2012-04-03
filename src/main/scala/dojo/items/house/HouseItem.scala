@@ -1,6 +1,8 @@
 package dojo.items.house
 
-import dojo.items.Item
+import dojo.items.{Purchasable, Item}
 
-class HouseItem(id: Int) extends Item(id) {
+
+abstract class HouseItem(id:Int) extends Item(id) with Purchasable {
+
 }

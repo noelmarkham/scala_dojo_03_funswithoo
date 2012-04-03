@@ -1,5 +1,13 @@
 package dojo.items.house
 
-class JukeBox extends HouseItem(99) {
+import dojo.items.TimedItem
 
+class JukeBox(id:Int = -99) extends HouseItem(id) with TimedItem {
+  def act(now: Int) = {
+    if (ready(now)) {
+      Some("Blah-Blah")
+    } else {
+      None
+    }
+  }
 }
