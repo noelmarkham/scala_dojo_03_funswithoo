@@ -6,8 +6,6 @@ trait TimedItem {
 
   var now = -1
 
-  def setDelay(delay:Int) {this.delay = delay}
-
   def ready(now:Int):Boolean = {
     now >= (this.now + this.delay)
   }
