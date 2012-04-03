@@ -1,5 +1,5 @@
 package dojo.items
 
-abstract class Item {
-  def id:Int;
+abstract class Item(val id:Int) {
+
 }

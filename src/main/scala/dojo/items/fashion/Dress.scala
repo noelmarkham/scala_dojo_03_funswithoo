@@ -1,8 +1,6 @@
 package dojo.items.fashion
 
 
-class Dress extends FashionItem {
-  var id = -99
+class Dress(id:Int = -99) extends FashionItem(id) {
 
-  def price = 0
 }

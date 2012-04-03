@@ -1,5 +1,5 @@
 package dojo.items
 
 trait Purchasable{
-  def price:Int;
+  var price:Int = _;
 }

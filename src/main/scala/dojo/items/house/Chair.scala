@@ -1,7 +1,5 @@
 package dojo.items.house
 
-class Chair extends HouseItem {
-  var id = -99
+class Chair(id:Int = -99) extends HouseItem(id) {
 
-  def price = 3
 }
